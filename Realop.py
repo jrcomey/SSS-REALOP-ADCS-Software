@@ -14,7 +14,8 @@ if asyncio.get_event_loop().is_running (): # Only patch if needed (i.e. running 
 import time
 
 async def Func1():
-    print(time.time())
+    current_time = time.time
+    print(f"Current time is {current_time}")
 
 async def Func2():
     print("Two")
